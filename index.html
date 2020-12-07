@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <label for="descricao">Nome</label>
-    <input type="text" id="descricao" class="input__form">
-<br><br>
-    <label for="valor">Idade</label>
-    <input type="number" id="idade" class="input__form">
-    <br><br>
-    <input type="button" value="Salvar" id="salvar">
+    <main>
 
-    <br><br>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>O cliente paga</th>
-            </tr>
-        </thead>
-        <tbody id="table-body">
-    
-        </tbody>
-    </table>
-    
-    <p id="resultTable">Saldo: R$ 0,00</p>
+        <section id="form">
+            <h1>Cadastro de convidados</h1>
 
+            <label for="descricao">Nome</label>
+            <input type="text" id="descricao" class="input__form">
+
+            <label for="valor">Idade</label>
+            <input type="number" id="idade" class="input__form">
+
+            <input type="button" value="Salvar" id="salvar">
+        </section>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>O cliente paga</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+
+        <p id="resultTable">Saldo: R$ 0,00</p>
+    </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
